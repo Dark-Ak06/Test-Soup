@@ -1,6 +1,9 @@
 from importlib.resources import files
 
 import click
+import tomllib
+
+tomllib.loads('')
 
 from soupdemo import __version__
 
