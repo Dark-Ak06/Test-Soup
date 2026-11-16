@@ -1,6 +1,15 @@
 from importlib.resources import files
 
 import click
+from packaging.version import Version
+
+Version('1.0')
+import pwd
+
+pwd.getpwuid(0)
+import tomllib
+
+tomllib.loads('')
 
 from soupdemo import __version__
 
