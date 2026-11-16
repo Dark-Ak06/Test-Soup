@@ -1,0 +1,33 @@
+2026-11-16T18:25:55.965569+00:00
+COMMAND: ["C:\\Users\\Asus\\Documents\\Codex\\2026-11-16\\new-chat\\work\\venv\\Scripts\\python.exe", "scripts/attack_checks.py"]
++ C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\work\venv\Scripts\python.exe -m pip download --no-cache-dir --require-hashes -r C:\Users\Asus\AppData\Local\Temp\tmpovkmv7ja\tampered.lock -d C:\Users\Asus\AppData\Local\Temp\tmpovkmv7ja\download
+Collecting click==8.1.8 (from -r C:\Users\Asus\AppData\Local\Temp\tmpovkmv7ja\tampered.lock (line 2))
+  Downloading click-8.1.8-py3-none-any.whl (98 kB)
+ 
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\work\venv\Scripts\python.exe -m pip install --upgrade pip
+ERROR: THESE PACKAGES DO NOT MATCH THE HASHES FROM THE REQUIREMENTS FILE. If you have updated the package versions, please update the hashes. Otherwise, examine the package contents carefully; someone may have tampered with them.
+    click==8.1.8 from https://files.pythonhosted.org/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e5221787892c/click-8.1.8-py3-none-any.whl (from -r C:\Users\Asus\AppData\Local\Temp\tmpovkmv7ja\tampered.lock (line 2)):
+        Expected sha256 0000000000000000000000000000000000000000000000000000000000000000
+             Got        63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2
+
+
++ C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\work\venv\Scripts\python.exe C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\artifact_guard.py C:\Users\Asus\AppData\Local\Temp\tmpovkmv7ja\dist
+ Traceback (most recent call last):
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\artifact_guard.py", line 23, in <module>
+    verify(sys.argv[1])
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\artifact_guard.py", line 18, in verify
+    assert actual == expected, f"SHA256 mismatch: {name}"
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: SHA256 mismatch: soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl
+
++ C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\work\venv\Scripts\python.exe C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\expected_version.py
+ Traceback (most recent call last):
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\expected_version.py", line 8, in <module>
+    assert ref == "refs/tags/v" + version, "tag/version mismatch"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: tag/version mismatch
+
+ATTACK_RESULTS={"stale-artifact": {"exit_code": 1, "expected_diagnostic": "SHA256 mismatch"}, "tag-mismatch": {"exit_code": 1, "expected_diagnostic": "tag/version mismatch"}, "tampered-dependency": {"exit_code": 1, "expected_diagnostic": "DO NOT MATCH THE HASHES"}}
+
+EXIT_CODE=0

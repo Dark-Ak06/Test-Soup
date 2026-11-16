@@ -1,0 +1,136 @@
+2026-11-16T18:25:22.482337+00:00
+COMMAND: ["C:\\Users\\Asus\\Documents\\Codex\\2026-11-16\\new-chat\\work\\venv\\Scripts\\python.exe", "scripts/build_release.py"]
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools==80.9.0
+  - wheel==0.45.1
+* Getting build dependencies for sdist...
+running egg_info
+creating src\soup_release_demo_darkak06_20261116.egg-info
+writing src\soup_release_demo_darkak06_20261116.egg-info\PKG-INFO
+writing dependency_links to src\soup_release_demo_darkak06_20261116.egg-info\dependency_links.txt
+writing entry points to src\soup_release_demo_darkak06_20261116.egg-info\entry_points.txt
+writing requirements to src\soup_release_demo_darkak06_20261116.egg-info\requires.txt
+writing top-level names to src\soup_release_demo_darkak06_20261116.egg-info\top_level.txt
+writing manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+reading manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+* Building sdist...
+running sdist
+running egg_info
+writing src\soup_release_demo_darkak06_20261116.egg-info\PKG-INFO
+writing dependency_links to src\soup_release_demo_darkak06_20261116.egg-info\dependency_links.txt
+writing entry points to src\soup_release_demo_darkak06_20261116.egg-info\entry_points.txt
+writing requirements to src\soup_release_demo_darkak06_20261116.egg-info\requires.txt
+writing top-level names to src\soup_release_demo_darkak06_20261116.egg-info\top_level.txt
+reading manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+running check
+creating soup_release_demo_darkak06_20261116-0.9.4
+creating soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+creating soup_release_demo_darkak06_20261116-0.9.4\src\soupdemo
+creating soup_release_demo_darkak06_20261116-0.9.4\src\soupdemo\data
+creating soup_release_demo_darkak06_20261116-0.9.4\tests
+copying files to soup_release_demo_darkak06_20261116-0.9.4...
+copying LICENSE -> soup_release_demo_darkak06_20261116-0.9.4
+copying README.md -> soup_release_demo_darkak06_20261116-0.9.4
+copying pyproject.toml -> soup_release_demo_darkak06_20261116-0.9.4
+copying src\soup_release_demo_darkak06_20261116.egg-info\PKG-INFO -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+copying src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+copying src\soup_release_demo_darkak06_20261116.egg-info\dependency_links.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+copying src\soup_release_demo_darkak06_20261116.egg-info\entry_points.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+copying src\soup_release_demo_darkak06_20261116.egg-info\requires.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+copying src\soup_release_demo_darkak06_20261116.egg-info\top_level.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+copying src\soupdemo\__init__.py -> soup_release_demo_darkak06_20261116-0.9.4\src\soupdemo
+copying src\soupdemo\cli.py -> soup_release_demo_darkak06_20261116-0.9.4\src\soupdemo
+copying src\soupdemo\data\greeting.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soupdemo\data
+copying tests\test_cli.py -> soup_release_demo_darkak06_20261116-0.9.4\tests
+copying src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt -> soup_release_demo_darkak06_20261116-0.9.4\src\soup_release_demo_darkak06_20261116.egg-info
+Writing soup_release_demo_darkak06_20261116-0.9.4\setup.cfg
+Creating tar archive
+removing 'soup_release_demo_darkak06_20261116-0.9.4' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools==80.9.0
+  - wheel==0.45.1
+* Getting build dependencies for wheel...
+running egg_info
+writing src\soup_release_demo_darkak06_20261116.egg-info\PKG-INFO
+writing dependency_links to src\soup_release_demo_darkak06_20261116.egg-info\dependency_links.txt
+writing entry points to src\soup_release_demo_darkak06_20261116.egg-info\entry_points.txt
+writing requirements to src\soup_release_demo_darkak06_20261116.egg-info\requires.txt
+writing top-level names to src\soup_release_demo_darkak06_20261116.egg-info\top_level.txt
+reading manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build\lib\soupdemo
+copying src\soupdemo\cli.py -> build\lib\soupdemo
+copying src\soupdemo\__init__.py -> build\lib\soupdemo
+creating build\lib\soupdemo\data
+copying src\soupdemo\data\greeting.txt -> build\lib\soupdemo\data
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\soupdemo
+copying build\lib\soupdemo\cli.py -> build\bdist.win-amd64\wheel\.\soupdemo
+creating build\bdist.win-amd64\wheel\soupdemo\data
+copying build\lib\soupdemo\data\greeting.txt -> build\bdist.win-amd64\wheel\.\soupdemo\data
+copying build\lib\soupdemo\__init__.py -> build\bdist.win-amd64\wheel\.\soupdemo
+running install_egg_info
+running egg_info
+writing src\soup_release_demo_darkak06_20261116.egg-info\PKG-INFO
+writing dependency_links to src\soup_release_demo_darkak06_20261116.egg-info\dependency_links.txt
+writing entry points to src\soup_release_demo_darkak06_20261116.egg-info\entry_points.txt
+writing requirements to src\soup_release_demo_darkak06_20261116.egg-info\requires.txt
+writing top-level names to src\soup_release_demo_darkak06_20261116.egg-info\top_level.txt
+reading manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src\soup_release_demo_darkak06_20261116.egg-info\SOURCES.txt'
+Copying src\soup_release_demo_darkak06_20261116.egg-info to build\bdist.win-amd64\wheel\.\soup_release_demo_darkak06_20261116-0.9.4-py3.12.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\soup_release_demo_darkak06_20261116-0.9.4.dist-info\WHEEL
+creating 'C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\dist\.tmp-6iitorsl\soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/licenses/LICENSE'
+adding 'soupdemo/__init__.py'
+adding 'soupdemo/cli.py'
+adding 'soupdemo/data/greeting.txt'
+adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/METADATA'
+adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/WHEEL'
+adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/entry_points.txt'
+adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/top_level.txt'
+adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+Successfully built soup_release_demo_darkak06_20261116-0.9.4.tar.gz and soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl
+Checking 
+C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\dist\soup_re
+lease_demo_darkak06_20261116-0.9.4-py3-none-any.whl: PASSED
+Checking 
+C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\dist\soup_re
+lease_demo_darkak06_20261116-0.9.4.tar.gz: PASSED
+Processing c:\users\asus\documents\codex\2026-11-16\new-chat\outputs\test-soup\dist\soup_release_demo_darkak06_20261116-0.9.4.tar.gz
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: soup-release-demo-darkak06-20261116
+  Building wheel for soup-release-demo-darkak06-20261116 (pyproject.toml): started
+  Building wheel for soup-release-demo-darkak06-20261116 (pyproject.toml): finished with status 'done'
+  Created wheel for soup-release-demo-darkak06-20261116: filename=soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl size=4064 sha256=99f012320e435d2c095e660adf1dfba363ce6b42168c28858fdb7493a7309625
+  Stored in directory: c:\users\asus\appdata\local\pip\cache\wheels\98\6d\8e\d4d0bee7611ab5277e2721e7253bbd18e17a44056ec0e566d1
+Successfully built soup-release-demo-darkak06-20261116
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\work\venv\Scripts\python.exe -m pip install --upgrade pip
+PASS build and version guard {"soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl": "5acfca582d15522467fda3fd2d1978e2698451a44c9dcb909b9baf0f128dae41", "soup_release_demo_darkak06_20261116-0.9.4.tar.gz": "12190531dedf4c5b121d6446f87d86a27596ec11adbb1814e9cc8ee6101bdf4b"}
+
+EXIT_CODE=0

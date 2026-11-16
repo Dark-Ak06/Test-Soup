@@ -1,0 +1,157 @@
+2026-11-16T18:24:49.361150+00:00
+COMMAND: ["docker", "build", "-t", "soup-naive-local", "C:\\Users\\Asus\\Documents\\Codex\\2026-11-16\\new-chat\\work\\experiments"]
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 188B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#4 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b 0.0s done
+#4 DONE 0.1s
+
+#5 [2/2] RUN python -m pip install pytest==8.4.2 build==1.3.0 twine==6.2.0 ruff==0.14.5 click==8.1.8 setuptools==80.9.0 wheel==0.45.1
+#5 1.680 Collecting pytest==8.4.2
+#5 2.042   Downloading pytest-8.4.2-py3-none-any.whl.metadata (7.7 kB)
+#5 2.138 Collecting build==1.3.0
+#5 2.220   Downloading build-1.3.0-py3-none-any.whl.metadata (5.6 kB)
+#5 2.323 Collecting twine==6.2.0
+#5 2.413   Downloading twine-6.2.0-py3-none-any.whl.metadata (3.6 kB)
+#5 2.991 Collecting ruff==0.14.5
+#5 3.077   Downloading ruff-0.14.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+#5 3.197 Collecting click==8.1.8
+#5 3.280   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+#5 3.447 Collecting setuptools==80.9.0
+#5 3.531   Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+#5 3.635 Collecting wheel==0.45.1
+#5 3.720   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+#5 3.808 Collecting iniconfig>=1 (from pytest==8.4.2)
+#5 3.892   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+#5 3.986 Collecting packaging>=20 (from pytest==8.4.2)
+#5 4.069   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+#5 4.161 Collecting pluggy<2,>=1.5 (from pytest==8.4.2)
+#5 4.245   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+#5 4.344 Collecting pygments>=2.7.2 (from pytest==8.4.2)
+#5 4.426   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+#5 4.520 Collecting pyproject_hooks (from build==1.3.0)
+#5 4.603   Downloading pyproject_hooks-1.3.3-py3-none-any.whl.metadata (1.3 kB)
+#5 4.696 Collecting readme-renderer>=35.0 (from twine==6.2.0)
+#5 4.784   Downloading readme_renderer-46.0-py3-none-any.whl.metadata (3.0 kB)
+#5 4.886 Collecting requests>=2.20 (from twine==6.2.0)
+#5 4.970   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#5 5.063 Collecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine==6.2.0)
+#5 5.148   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+#5 5.255 Collecting urllib3>=1.26.0 (from twine==6.2.0)
+#5 5.340   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#5 5.452 Collecting keyring>=21.2.0 (from twine==6.2.0)
+#5 5.538   Downloading keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+#5 5.645 Collecting rfc3986>=1.4.0 (from twine==6.2.0)
+#5 5.727   Downloading rfc3986-2.0.0-py2.py3-none-any.whl.metadata (6.6 kB)
+#5 5.840 Collecting rich>=12.0.0 (from twine==6.2.0)
+#5 5.925   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+#5 6.032 Collecting id (from twine==6.2.0)
+#5 6.113   Downloading id-1.6.1-py3-none-any.whl.metadata (5.1 kB)
+#5 6.207 Collecting SecretStorage>=3.2 (from keyring>=21.2.0->twine==6.2.0)
+#5 6.291   Downloading secretstorage-3.5.0-py3-none-any.whl.metadata (4.0 kB)
+#5 6.383 Collecting jeepney>=0.4.2 (from keyring>=21.2.0->twine==6.2.0)
+#5 6.466   Downloading jeepney-0.9.0-py3-none-any.whl.metadata (1.2 kB)
+#5 6.556 Collecting jaraco.classes (from keyring>=21.2.0->twine==6.2.0)
+#5 6.639   Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+#5 6.734 Collecting jaraco.functools (from keyring>=21.2.0->twine==6.2.0)
+#5 6.820   Downloading jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+#5 6.911 Collecting jaraco.context (from keyring>=21.2.0->twine==6.2.0)
+#5 6.995   Downloading jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+#5 7.108 Collecting nh3>=0.2.14 (from readme-renderer>=35.0->twine==6.2.0)
+#5 7.196   Downloading nh3-0.3.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.0 kB)
+#5 7.287 Collecting docutils>=0.21.2 (from readme-renderer>=35.0->twine==6.2.0)
+#5 7.371   Downloading docutils-0.23-py3-none-any.whl.metadata (15 kB)
+#5 7.597 Collecting charset_normalizer<4,>=2 (from requests>=2.20->twine==6.2.0)
+#5 7.686   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+#5 7.811 Collecting idna<4,>=2.5 (from requests>=2.20->twine==6.2.0)
+#5 7.896   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#5 8.002 Collecting certifi>=2023.5.7 (from requests>=2.20->twine==6.2.0)
+#5 8.087   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#5 8.190 Collecting markdown-it-py>=2.2.0 (from rich>=12.0.0->twine==6.2.0)
+#5 8.273   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+#5 8.386 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.0.0->twine==6.2.0)
+#5 8.469   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+#5 8.719 Collecting cryptography>=2.0 (from SecretStorage>=3.2->keyring>=21.2.0->twine==6.2.0)
+#5 8.802   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+#5 8.899 Collecting more-itertools (from jaraco.classes->keyring>=21.2.0->twine==6.2.0)
+#5 8.981   Downloading more_itertools-11.2.1-py3-none-any.whl.metadata (42 kB)
+#5 9.166 Collecting cffi>=2.0.0 (from cryptography>=2.0->SecretStorage>=3.2->keyring>=21.2.0->twine==6.2.0)
+#5 9.249   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+#5 9.342 Collecting pycparser (from cffi>=2.0.0->cryptography>=2.0->SecretStorage>=3.2->keyring>=21.2.0->twine==6.2.0)
+#5 9.424   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+#5 9.519 Downloading pytest-8.4.2-py3-none-any.whl (365 kB)
+#5 9.786 Downloading build-1.3.0-py3-none-any.whl (23 kB)
+#5 9.875 Downloading twine-6.2.0-py3-none-any.whl (42 kB)
+#5 9.965 Downloading ruff-0.14.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.8 MB)
+#5 11.37    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.8/13.8 MB 9.8 MB/s eta 0:00:00
+#5 11.45 Downloading click-8.1.8-py3-none-any.whl (98 kB)
+#5 11.55 Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+#5 11.67    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 10.7 MB/s eta 0:00:00
+#5 11.75 Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+#5 11.84 Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+#5 11.94 Downloading keyring-25.7.0-py3-none-any.whl (39 kB)
+#5 12.03 Downloading packaging-26.3-py3-none-any.whl (129 kB)
+#5 12.13 Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+#5 12.22 Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+#5 12.33    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 11.2 MB/s eta 0:00:00
+#5 12.41 Downloading readme_renderer-46.0-py3-none-any.whl (14 kB)
+#5 12.51 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#5 12.60 Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+#5 12.69 Downloading rfc3986-2.0.0-py2.py3-none-any.whl (31 kB)
+#5 12.79 Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+#5 12.90 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#5 13.00 Downloading id-1.6.1-py3-none-any.whl (14 kB)
+#5 13.09 Downloading pyproject_hooks-1.3.3-py3-none-any.whl (10 kB)
+#5 13.18 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#5 13.27 Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+#5 13.38 Downloading docutils-0.23-py3-none-any.whl (634 kB)
+#5 13.44    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 634.7/634.7 kB 10.2 MB/s eta 0:00:00
+#5 13.53 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#5 13.63 Downloading jeepney-0.9.0-py3-none-any.whl (49 kB)
+#5 13.72 Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+#5 13.82 Downloading nh3-0.3.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (832 kB)
+#5 13.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 832.2/832.2 kB 10.6 MB/s eta 0:00:00
+#5 13.98 Downloading secretstorage-3.5.0-py3-none-any.whl (15 kB)
+#5 14.07 Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+#5 14.16 Downloading jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+#5 14.26 Downloading jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+#5 14.35 Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+#5 14.76    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 11.5 MB/s eta 0:00:00
+#5 14.84 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+#5 14.93 Downloading more_itertools-11.2.1-py3-none-any.whl (74 kB)
+#5 15.03 Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+#5 15.13 Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+#5 15.23 Installing collected packages: wheel, urllib3, setuptools, ruff, rfc3986, pyproject_hooks, pygments, pycparser, pluggy, packaging, nh3, more-itertools, mdurl, jeepney, jaraco.context, iniconfig, idna, docutils, click, charset_normalizer, certifi, requests, readme-renderer, pytest, markdown-it-py, jaraco.functools, jaraco.classes, id, cffi, build, rich, requests-toolbelt, cryptography, SecretStorage, keyring, twine
+#5 18.21 Successfully installed SecretStorage-3.5.0 build-1.3.0 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 click-8.1.8 cryptography-50.0.2 docutils-0.23 id-1.6.1 idna-3.20 iniconfig-2.3.1 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.3.0 mdurl-0.1.2 more-itertools-11.2.1 nh3-0.3.7 packaging-26.3 pluggy-1.7.0 pycparser-3.12 pygments-2.21.0 pyproject_hooks-1.3.3 pytest-8.4.2 readme-renderer-46.0 requests-2.34.2 requests-toolbelt-1.0.0 rfc3986-2.0.0 rich-15.0.0 ruff-0.14.5 setuptools-80.9.0 twine-6.2.0 urllib3-2.8.0 wheel-0.45.1
+#5 18.21 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#5 18.52 
+#5 18.52 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#5 18.52 [notice] To update, run: pip install --upgrade pip
+#5 DONE 18.8s
+
+#6 exporting to image
+#6 exporting layers
+#6 exporting layers 4.0s done
+#6 exporting manifest sha256:16c68107ffbf0e1bef558ef4f5ee646e5e417f9f69cb47efd5afca55b9f8e2ba 0.0s done
+#6 exporting config sha256:7147289a9f261e8fc975f0fd1a50df9f681da5ad0f8b0917fe57f33746f73188 0.0s done
+#6 exporting attestation manifest sha256:48c1e36714f7afe9722da76bc3b7043759e1dc2c67df8e315ad38bb2129adb8f 0.0s done
+#6 exporting manifest list sha256:e30e84097c04339ae01d9777e1112e471cc2406c3c8cdbc3d77355aec4ecb744 0.0s done
+#6 naming to docker.io/library/soup-naive-local:latest done
+#6 unpacking to docker.io/library/soup-naive-local:latest
+#6 unpacking to docker.io/library/soup-naive-local:latest 1.1s done
+#6 DONE 5.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/uzh5qh80esiusoxpi442qxnlp
+
+EXIT_CODE=0

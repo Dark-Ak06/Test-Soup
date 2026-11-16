@@ -1,0 +1,3 @@
+soupdemo/__init__.py
+soupdemo/cli.py
+soupdemo/data/greeting.txt

@@ -1,0 +1,62 @@
+name: release-testpypi
+on:
+  push:
+    tags: ['v*', '!v0.9.3']
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  checks:
+    uses: ./.github/workflows/ci.yml
+  publish-testpypi:
+    needs: checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: testpypi
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: dist-${{ github.run_id }}-${{ github.sha }}
+          path: dist/
+      - run: python scripts/artifact_guard.py dist
+      - run: mkdir publish && cp dist/*.whl dist/*.tar.gz publish/
+      - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          packages-dir: publish/
+  post-publish:
+    needs: publish-testpypi
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {os: ubuntu-latest, python: '3.10'}
+          - {os: ubuntu-latest, python: '3.13'}
+          - {os: windows-latest, python: '3.13'}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - shell: bash
+        run: python scripts/expected_version.py >> "$GITHUB_ENV"
+      - if: runner.os == 'Linux'
+        run: python scripts/post_publish.py "$EXPECTED_VERSION" --docker "${{ matrix.python }}"
+      - if: runner.os == 'Windows'
+        shell: bash
+        run: python scripts/post_publish.py "$EXPECTED_VERSION"

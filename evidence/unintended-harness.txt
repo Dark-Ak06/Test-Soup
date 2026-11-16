@@ -1,0 +1,6 @@
+
+2026-11-16: original reproduce.py harness ended exit 1 after all experiments.
+AssertionError: wrong failure for incident: No module named 'tomllib'
+Actual retained subprocess: local-incident-installed.txt, exit 1,
+ModuleNotFoundError: No module named 'packaging'.
+Interpretation corrected using existing log, not a rerun.

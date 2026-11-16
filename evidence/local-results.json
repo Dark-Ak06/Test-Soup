@@ -1,0 +1,50 @@
+[
+  {
+    "name": "fixed",
+    "naive_exit": 0,
+    "verify_exit": 0,
+    "diagnostic": "PASS installed package"
+  },
+  {
+    "name": "01-python310",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "No module named 'tomllib'"
+  },
+  {
+    "name": "02-windows",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "No module named 'pwd'"
+  },
+  {
+    "name": "03-data",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "FileNotFoundError"
+  },
+  {
+    "name": "04-dependency",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "No module named 'packaging'"
+  },
+  {
+    "name": "05-entrypoint",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "cannot import name 'mian'"
+  },
+  {
+    "name": "06-version",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "runtime version mismatch"
+  },
+  {
+    "name": "incident",
+    "naive_exit": 0,
+    "verify_exit": 1,
+    "diagnostic": "No module named 'packaging'"
+  }
+]

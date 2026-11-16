@@ -1,0 +1,25 @@
+2026-11-16T18:25:44.083866+00:00
+COMMAND: ["C:\\Users\\Asus\\Documents\\Codex\\2026-11-16\\new-chat\\work\\venv\\Scripts\\python.exe", "scripts/verify_install.py", "dist", "--expected", "0.9.4"]
++ C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\python.exe -m pip install --require-hashes -r C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\requirements-runtime.lock
+Collecting click==8.1.8 (from -r C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\requirements-runtime.lock (line 2))
+  Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Collecting colorama==0.4.6 (from -r C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\requirements-runtime.lock (line 4))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: colorama, click
+Successfully installed click-8.1.8 colorama-0.4.6
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\python.exe -m pip install --upgrade pip
++ C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\python.exe -m pip install --no-deps C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl
+Processing c:\users\asus\appdata\local\temp\soup-installed-plvwp6xx\soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl
+Installing collected packages: soup-release-demo-darkak06-20261116
+Successfully installed soup-release-demo-darkak06-20261116-0.9.4
+
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\python.exe -m pip install --upgrade pip
++ C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\python.exe -m pip check
+No broken requirements found.
++ C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\python.exe C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\installed_probe.py 0.9.4 C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Scripts\soupdemo.exe
+PASS installed package: C:\Users\Asus\AppData\Local\Temp\soup-installed-plvwp6xx\env\Lib\site-packages\soupdemo\__init__.py; version=0.9.4
+
+EXIT_CODE=0

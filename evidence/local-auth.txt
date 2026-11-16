@@ -1,0 +1,5 @@
+2026-11-16T18:25:11.425966+00:00
+COMMAND: ["..\\..\\work\\gh\\bin\\gh.exe", "auth", "status"]
+You are not logged into any GitHub hosts. To log in, run: gh auth login
+
+EXIT_CODE=1

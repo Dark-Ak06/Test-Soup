@@ -1,0 +1,35 @@
+{
+  "actions/checkout": {
+    "tag": "v7.0.1",
+    "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1"
+  },
+  "actions/setup-python": {
+    "tag": "v7.1.0",
+    "sha": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0"
+  },
+  "actions/upload-artifact": {
+    "tag": "v7.0.2",
+    "sha": "cf430e030ddbb5b0abf93d22962f4752f3646cd9"
+  },
+  "actions/download-artifact": {
+    "tag": "v8.0.2",
+    "sha": "9000827ccba6bdab643e8b6fd33ac0654aef8333"
+  },
+  "pypa/gh-action-pypi-publish": {
+    "tag": "v1.14.3",
+    "sha": "7245906fb61fa33a13554f9d5fb856fe61758086"
+  },
+  "rhysd/actionlint": {
+    "tag": "v1.7.12",
+    "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_windows_amd64.zip"
+  },
+  "gitleaks/gitleaks": {
+    "tag": "v8.30.1",
+    "url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_windows_x64.zip"
+  },
+  "project": {
+    "name": "soup-release-demo-darkak06-20261116",
+    "testpypi_status": 404
+  },
+  "retrieved_at": "2026-11-16T18:20:01.277129+00:00"
+}

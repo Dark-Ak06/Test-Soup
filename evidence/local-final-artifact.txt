@@ -1,0 +1,5 @@
+2026-11-16T18:33:02.779727+00:00
+COMMAND: ["C:\\Users\\Asus\\Documents\\Codex\\2026-11-16\\new-chat\\work\\venv\\Scripts\\python.exe", "scripts/artifact_guard.py", "dist"]
+PASS artifact digests {"soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl": "5acfca582d15522467fda3fd2d1978e2698451a44c9dcb909b9baf0f128dae41", "soup_release_demo_darkak06_20261116-0.9.4.tar.gz": "12190531dedf4c5b121d6446f87d86a27596ec11adbb1814e9cc8ee6101bdf4b"}
+
+EXIT_CODE=0
