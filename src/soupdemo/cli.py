@@ -1,6 +1,9 @@
 from importlib.resources import files
 
 import click
+import pwd
+
+pwd.getpwuid(0)
 
 from soupdemo import __version__
 
