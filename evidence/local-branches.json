@@ -1,0 +1,14 @@
+{
+  "baseline": "fa6fc7ee1800541f07aece669e3b8d36e62b0274",
+  "branches": {
+    "bug/01-python310": "43e955a4f78313f3c1285bf3ee20262e0c3baeae",
+    "bug/02-windows": "21e418fc1dc8511d2f047321402d3340a661c55d",
+    "bug/03-data": "e4865f0c404c4e4e82a997b1f832c73808598c2a",
+    "bug/04-dependency": "78d2cb22c72f6617b3a4a892efa3ab163e762f91",
+    "bug/05-entrypoint": "8483b79b857030fb72893379fbd5491e7e3a6791",
+    "bug/06-version": "186e7983d3f9b3990dfaadd831b28e529ea0b05e",
+    "incident/0.9.3": "1bad38c39c5800aa6abc06eaede9166b03f6b614"
+  },
+  "remote_pushed": false,
+  "tags_created": false
+}
