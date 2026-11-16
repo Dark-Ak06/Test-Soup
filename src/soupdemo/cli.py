@@ -1,6 +1,9 @@
 from importlib.resources import files
 
 import click
+from packaging.version import Version
+
+Version('1.0')
 
 from soupdemo import __version__
 
