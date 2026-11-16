@@ -25,7 +25,7 @@ where = ["src"]
 include-package-data = false
 
 [tool.setuptools.package-data]
-soupdemo = ["data/*.txt"]
+soupdemo = []
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
