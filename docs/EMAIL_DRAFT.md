@@ -1,21 +1,19 @@
-Subject: DevOps internship exercise - local implementation and evidence
+Subject: DevOps internship exercise - release pipeline and evidence
 To: team@trysoup.dev
 
-DRAFT ONLY - NOT SENT. Not ready for submission as a completed hosted exercise.
+DRAFT - NOT SENT
 
 Hello Soup team,
 
-I have prepared a Python CLI release-pipeline exercise with six independent
-packaging/platform defects, local naive-green/installed-red experiments,
-artifact checks, supply-chain attack demonstrations and a GPU CI cost design.
+Repository: https://github.com/Dark-Ak06/Test-Soup
+Evidence and six naive-green / robust-red pairs:
+https://github.com/Dark-Ak06/Test-Soup/blob/main/docs/EVIDENCE.md
+Fixed release: https://github.com/Dark-Ak06/Test-Soup/actions/runs/44142793862
+Test package: https://test.pypi.org/project/soup-release-demo-darkak06-20261116/
 
-Target repository: https://github.com/Dark-Ak06/Test-Soup
-Upload and Actions run links: PENDING - GitHub authentication is not configured.
-TestPyPI publication: PENDING - account/Trusted Publisher setup is required.
-Attached note: docs/NOTE.pdf. Full local evidence: evidence/ and docs/EVIDENCE.md.
-AI assistance and its mistakes are disclosed in docs/AI_USAGE.md.
+The project demonstrates six packaging/platform defects, a clean installed-artifact
+matrix, three supply-chain attack rejections, OIDC publication and GPU CI design.
+The two-page note is docs/NOTE.pdf. AI assistance is disclosed in docs/AI_USAGE.md.
+Remaining limits are recorded in docs/STATUS.md.
 
-[Candidate: add your own paragraph about what surprised you and still concerns you.]
-
-Please do not send this draft until remote results and the personal paragraph
-are filled in. No successful cloud release is claimed here.
+[Candidate: add your own reflection on what surprised you and still concerns you.]

@@ -1,0 +1,24 @@
+2026-11-17T17:01:43.658621+00:00
+COMMAND: ["C:\\Users\\Asus\\Documents\\Codex\\2026-11-16\\new-chat\\work\\venv\\Scripts\\python.exe", "scripts/post_publish.py", "0.9.3", "--docker", "3.10"]
+Looking in indexes: https://test.pypi.org/simple/
+Collecting soup-release-demo-darkak06-20261116==0.9.3
+  Downloading https://test-files.pythonhosted.org/packages/90/26/203b64bbce9d7a90ffa6ed37f9383ef180687496e2a08259bc36eb1313df/soup_release_demo_darkak06_20261116-0.9.3-py3-none-any.whl.metadata (1.6 kB)
+Downloading https://test-files.pythonhosted.org/packages/90/26/203b64bbce9d7a90ffa6ed37f9383ef180687496e2a08259bc36eb1313df/soup_release_demo_darkak06_20261116-0.9.3-py3-none-any.whl (3.9 kB)
+Saved c:\users\asus\appdata\local\temp\tmppwmnn43r\soup_release_demo_darkak06_20261116-0.9.3-py3-none-any.whl
+Successfully downloaded soup-release-demo-darkak06-20261116
++ docker run --rm --user 65534:65534 -e HOME=/tmp --mount type=bind,source=C:\Users\Asus\AppData\Local\Temp\soup-installed-2jk7g5f_,target=/input,readonly python:3.10-slim sh -ec python -m venv /tmp/env && /tmp/env/bin/python -m pip install --require-hashes -r /input/requirements-runtime.lock && /tmp/env/bin/python -m pip install --no-deps /input/*.whl && /tmp/env/bin/python -m pip check && /tmp/env/bin/python /input/installed_probe.py 0.9.3 /tmp/env/bin/soupdemo
+failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+Traceback (most recent call last):
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\post_publish.py", line 47, in <module>
+    main()
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\post_publish.py", line 43, in main
+    verify(temp, args.version, args.docker)
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\verify_install.py", line 41, in verify
+    run(
+  File "C:\Users\Asus\Documents\Codex\2026-11-16\new-chat\outputs\Test-Soup\scripts\verify_install.py", line 14, in run
+    subprocess.run(list(map(str, args)), check=True, **kwargs)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--user', '65534:65534', '-e', 'HOME=/tmp', '--mount', 'type=bind,source=C:\\Users\\Asus\\AppData\\Local\\Temp\\soup-installed-2jk7g5f_,target=/input,readonly', 'python:3.10-slim', 'sh', '-ec', 'python -m venv /tmp/env && /tmp/env/bin/python -m pip install --require-hashes -r /input/requirements-runtime.lock && /tmp/env/bin/python -m pip install --no-deps /input/*.whl && /tmp/env/bin/python -m pip check && /tmp/env/bin/python /input/installed_probe.py 0.9.3 /tmp/env/bin/soupdemo']' returned non-zero exit status 1.
+
+EXIT_CODE=1

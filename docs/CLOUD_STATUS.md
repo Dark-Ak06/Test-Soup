@@ -1,9 +1,16 @@
-# Cloud continuation: 2026-11-17
+# Current status: 2026-11-17
 
-Baseline run 43933875717 succeeded with 33/33 jobs.
+Six independent defect branches have real hosted naive-green and intended
+robust-red runs. Exact errors and shared fixed-green baseline are in EVIDENCE.md.
+The initial baseline passed 33 jobs. The main candidate also passed hosted CI.
+Both naive.yml and release.yml Trusted Publishers are configured in TestPyPI;
+environment testpypi restricts deployments to tags v*.
+Incident 0.9.3 was published via OIDC and its installed failures reproduced.
+Fixed 0.9.4 release: SUCCESS, including OIDC publication and Linux 3.10/3.13 plus Windows 3.13 post-publish installs. Full metadata: evidence/cloud/44142793862.json.
 
-Main and all six defect branches plus incident are pushed. Dedicated push runs are executing; see GitHub Actions for live state. Five defect naive runs have been rechecked as successful. Full robust outcomes remain pending; no final red/green table is claimed yet.
-
-Environment testpypi now restricts deployment to tags v*. No publication tags created yet. TestPyPI publisher setup is blocked: the account page explicitly says 2FA is not enabled. Recovery codes alone did not complete enrollment.
-
-Saved API snapshots and duplicate-dispatch cancellation records are in evidence/cloud/. They supersede older claims that no hosted runs exist. The original NOTE.pdf remains a historical local-stage note and will be regenerated after release verification.
+NOT DONE / NOT VERIFIED: fork PR with a second account, GPU execution (design
+only), fully hashed build/dev transitive toolchain, semantic escape demonstration,
+candidate's personal reflection and sending the submission email.
+No failed run, branch or published tag was deleted or rewritten. Duplicate queued
+manual dispatches were cancelled when identical push runs appeared; records retained.
+Earlier local-stage notes/status are historical. This file and EVIDENCE supersede them.

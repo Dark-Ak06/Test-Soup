@@ -2,11 +2,11 @@
 
 ## Release confidence starts after installation
 
-SOUP / DEVOPS EXERCISE / 16 NOVEMBER 2026
+SOUP / DEVOPS EXERCISE / 17 NOVEMBER 2026
 
 ## Verdict: not ready for unattended production publication
 
-The local release candidate passes the implemented checks, but the hosted matrix, OIDC publication and TestPyPI smoke tests have not run. GitHub CLI has no authenticated account. This is a tested local implementation with an explicit remote-execution gap, not a completed cloud release.
+The hosted fixed baseline passed 33 jobs. Six independent defect branches now have verified naive-green and intended robust-red runs. Incident 0.9.3 was published to TestPyPI via OIDC and its installed failures reproduced. Fixed release 0.9.4 has its own full release workflow; final outcome is recorded in docs/EVIDENCE.md.
 
 ## 1. Incident and measured defects
 
@@ -35,7 +35,7 @@ Linux verification runs non-root Docker with only distributions, a runtime lock 
 
 Three real local attacks were rejected with the intended errors: tampered dependency hashes by pip, modified wheel bytes by the SHA256 guard, and v0.9.5 against 0.9.4 metadata by the version guard. Exact runtime pins/hashes, unique artifact names and full Action commit pins reduce substitution and release mistakes at low runtime cost. Hashes prove identity, not trustworthiness.
 
-The implementation does not prove semantic correctness beyond its small tests, safety of approved dependencies, or integrity of a compromised build runner. Dev/build transitive dependencies are not fully locked; Docker tags and runner images can drift. Python metadata permits newer versions beyond the tested 3.14 ceiling. ARM, macOS execution and fork-PR isolation are unverified. Repository/environment protections still need account setup. No claim of a demonstrated semantic escape or full hermetic build is made.
+The implementation does not prove semantic correctness beyond its small tests, safety of approved dependencies, or integrity of a compromised build runner. Dev/build transitive dependencies are not fully locked; Docker tags and runner images can drift. Python metadata permits newer versions beyond the tested 3.14 ceiling. ARM execution and fork-PR isolation remain unverified. Intel macOS was exercised in hosted CI; the TestPyPI environment is restricted to version tags. No claim of a demonstrated semantic escape or full hermetic build is made.
 
 ## 4. GPU CI: designed, not run
 
@@ -47,7 +47,7 @@ Gate allocation on green CPU jobs; detect missing GPU in about 60 seconds; set j
 
 ## 5. What to fix first
 
-First complete GitHub authentication and TestPyPI account/environment/Trusted Publisher setup, then collect real naive-green, intended robust-red and fixed-green hosted runs and exact-version installs. Next lock the build toolchain and enforce reviewed release/tag creation. Only after those results should unattended TestPyPI release be trusted within the tested boundary. Real PyPI publishing is neither configured nor authorized by this implementation.
+GitHub authentication, TestPyPI 2FA, both Trusted Publishers and tag-only environment rules are configured. Six hosted defect pairs are documented. Next lock the build toolchain, protect release/tag creation and broaden semantic tests before considering unattended production publishing. Only after those results should unattended TestPyPI release be trusted within the tested boundary. Real PyPI publishing is neither configured nor authorized by this implementation.
 
 ## AI disclosure and personal reflection
 

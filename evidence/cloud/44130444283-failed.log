@@ -1,0 +1,412 @@
+build	UNKNOWN STEP	п»ї2026-11-17T16:51:45.3252358Z Current runner version: '2.338.2'
+build	UNKNOWN STEP	2026-11-17T16:51:45.3275631Z ##[group]Runner Image Provisioner
+build	UNKNOWN STEP	2026-11-17T16:51:45.3276383Z Hosted Compute Agent
+build	UNKNOWN STEP	2026-11-17T16:51:45.3276955Z Version: 20261103.629
+build	UNKNOWN STEP	2026-11-17T16:51:45.3277398Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+build	UNKNOWN STEP	2026-11-17T16:51:45.3277905Z Build Date: 2026-11-03T17:26:59Z
+build	UNKNOWN STEP	2026-11-17T16:51:45.3278570Z Worker ID: {f0a4c5ce-826b-4a9b-b319-a906cb8aae3f}
+build	UNKNOWN STEP	2026-11-17T16:51:45.3279007Z Region: westus2
+build	UNKNOWN STEP	2026-11-17T16:51:45.3279433Z Cloud: Azure
+build	UNKNOWN STEP	2026-11-17T16:51:45.3279822Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:45.3281066Z ##[group]Operating System
+build	UNKNOWN STEP	2026-11-17T16:51:45.3281460Z Ubuntu
+build	UNKNOWN STEP	2026-11-17T16:51:45.3281784Z 26.04.1
+build	UNKNOWN STEP	2026-11-17T16:51:45.3282152Z LTS
+build	UNKNOWN STEP	2026-11-17T16:51:45.3282517Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:45.3282883Z ##[group]Runner Image
+build	UNKNOWN STEP	2026-11-17T16:51:45.3283283Z Image: ubuntu-26.04
+build	UNKNOWN STEP	2026-11-17T16:51:45.3283646Z Version: 20261111.196.1
+build	UNKNOWN STEP	2026-11-17T16:51:45.3284578Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+build	UNKNOWN STEP	2026-11-17T16:51:45.3285840Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+build	UNKNOWN STEP	2026-11-17T16:51:45.3286434Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:45.3287294Z ##[group]GITHUB_TOKEN Permissions
+build	UNKNOWN STEP	2026-11-17T16:51:45.3289325Z Contents: read
+build	UNKNOWN STEP	2026-11-17T16:51:45.3289685Z Metadata: read
+build	UNKNOWN STEP	2026-11-17T16:51:45.3290109Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:45.3291796Z Secret source: Actions
+build	UNKNOWN STEP	2026-11-17T16:51:45.3292508Z Cache mode: write
+build	UNKNOWN STEP	2026-11-17T16:51:45.3292999Z Prepare workflow directory
+build	UNKNOWN STEP	2026-11-17T16:51:45.3546576Z Prepare all required actions
+build	UNKNOWN STEP	2026-11-17T16:51:45.3581415Z Getting action download info
+build	UNKNOWN STEP	2026-11-17T16:51:45.7132631Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+build	UNKNOWN STEP	2026-11-17T16:51:45.8301570Z Download action repository 'actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0' (SHA:6d4fd22b20465ccc0f7354476588e8df7c9ca0e0)
+build	UNKNOWN STEP	2026-11-17T16:51:45.9070238Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+build	UNKNOWN STEP	2026-11-17T16:51:46.0631542Z Complete job name: build
+build	UNKNOWN STEP	2026-11-17T16:51:46.1214161Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+build	UNKNOWN STEP	2026-11-17T16:51:46.1214715Z with:
+build	UNKNOWN STEP	2026-11-17T16:51:46.1214979Z   persist-credentials: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.1215283Z   repository: Dark-Ak06/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:46.1217567Z   token: ***
+build	UNKNOWN STEP	2026-11-17T16:51:46.1217813Z   ssh-strict: true
+build	UNKNOWN STEP	2026-11-17T16:51:46.1218207Z   ssh-user: git
+build	UNKNOWN STEP	2026-11-17T16:51:46.1218452Z   clean: true
+build	UNKNOWN STEP	2026-11-17T16:51:46.1218709Z   sparse-checkout-cone-mode: true
+build	UNKNOWN STEP	2026-11-17T16:51:46.1219011Z   fetch-depth: 1
+build	UNKNOWN STEP	2026-11-17T16:51:46.1219261Z   fetch-tags: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.1219523Z   show-progress: true
+build	UNKNOWN STEP	2026-11-17T16:51:46.1219860Z   lfs: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.1220099Z   submodules: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.1220359Z   set-safe-directory: true
+build	UNKNOWN STEP	2026-11-17T16:51:46.1220651Z   allow-unsafe-pr-checkout: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.1221049Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.3112582Z Syncing repository: Dark-Ak06/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:46.3114089Z ##[group]Getting Git version info
+build	UNKNOWN STEP	2026-11-17T16:51:46.3114691Z Working directory is '/home/runner/work/Test-Soup/Test-Soup'
+build	UNKNOWN STEP	2026-11-17T16:51:46.3115349Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2026-11-17T16:51:46.3130561Z git version 2.56.1
+build	UNKNOWN STEP	2026-11-17T16:51:46.3150224Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.3162532Z Temporarily overriding HOME='/home/runner/work/_temp/4ce2ac8c-d8aa-4ada-a368-abbb68b3fb34' before making global git config changes
+build	UNKNOWN STEP	2026-11-17T16:51:46.3164168Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2026-11-17T16:51:46.3167456Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Test-Soup/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:46.3229491Z Deleting the contents of '/home/runner/work/Test-Soup/Test-Soup'
+build	UNKNOWN STEP	2026-11-17T16:51:46.3231871Z ##[group]Determining repository object format
+build	UNKNOWN STEP	2026-11-17T16:51:46.3233298Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.3233942Z ##[group]Initializing the repository
+build	UNKNOWN STEP	2026-11-17T16:51:46.3237300Z [command]/usr/bin/git init /home/runner/work/Test-Soup/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:46.3325195Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	UNKNOWN STEP	2026-11-17T16:51:46.3326292Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	UNKNOWN STEP	2026-11-17T16:51:46.3327561Z hint: to use in all of your new repositories, which will suppress this warning,
+build	UNKNOWN STEP	2026-11-17T16:51:46.3328389Z hint: call:
+build	UNKNOWN STEP	2026-11-17T16:51:46.3328738Z hint:
+build	UNKNOWN STEP	2026-11-17T16:51:46.3329199Z hint: 	git config --global init.defaultBranch <name>
+build	UNKNOWN STEP	2026-11-17T16:51:46.3329733Z hint:
+build	UNKNOWN STEP	2026-11-17T16:51:46.3330261Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	UNKNOWN STEP	2026-11-17T16:51:46.3331151Z hint: 'development'. The just-created branch can be renamed via this command:
+build	UNKNOWN STEP	2026-11-17T16:51:46.3331831Z hint:
+build	UNKNOWN STEP	2026-11-17T16:51:46.3332190Z hint: 	git branch -m <name>
+build	UNKNOWN STEP	2026-11-17T16:51:46.3332592Z hint:
+build	UNKNOWN STEP	2026-11-17T16:51:46.3333151Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	UNKNOWN STEP	2026-11-17T16:51:46.3334059Z Initialized empty Git repository in /home/runner/work/Test-Soup/Test-Soup/.git/
+build	UNKNOWN STEP	2026-11-17T16:51:46.3342844Z [command]/usr/bin/git remote add origin https://github.com/Dark-Ak06/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:46.3394704Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.3395468Z ##[group]Disabling automatic garbage collection
+build	UNKNOWN STEP	2026-11-17T16:51:46.3397227Z [command]/usr/bin/git config --local gc.auto 0
+build	UNKNOWN STEP	2026-11-17T16:51:46.3429586Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.3430412Z ##[group]Setting up auth
+build	UNKNOWN STEP	2026-11-17T16:51:46.3431069Z Removing SSH command configuration
+build	UNKNOWN STEP	2026-11-17T16:51:46.3433786Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2026-11-17T16:51:46.3464806Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2026-11-17T16:51:46.3825073Z Removing HTTP extra header
+build	UNKNOWN STEP	2026-11-17T16:51:46.3829524Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2026-11-17T16:51:46.3858591Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2026-11-17T16:51:46.4094310Z Removing includeIf entries pointing to credentials config files
+build	UNKNOWN STEP	2026-11-17T16:51:46.4099651Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2026-11-17T16:51:46.4131245Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2026-11-17T16:51:46.4404311Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	UNKNOWN STEP	2026-11-17T16:51:46.4441145Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git.path /home/runner/work/_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.4470284Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.4535286Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.4565297Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.4592410Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.4592847Z ##[group]Fetching the repository
+build	UNKNOWN STEP	2026-11-17T16:51:46.4597521Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +36b08b063b287798dcb0fb93a7d5a7843ce86e97:refs/remotes/origin/bug/03-data
+build	UNKNOWN STEP	2026-11-17T16:51:46.7284666Z From https://github.com/Dark-Ak06/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:46.7285676Z  * [new ref]         36b08b063b287798dcb0fb93a7d5a7843ce86e97 -> origin/bug/03-data
+build	UNKNOWN STEP	2026-11-17T16:51:46.7293182Z [command]/usr/bin/git branch --list --remote origin/bug/03-data
+build	UNKNOWN STEP	2026-11-17T16:51:46.7317225Z   origin/bug/03-data
+build	UNKNOWN STEP	2026-11-17T16:51:46.7323432Z [command]/usr/bin/git rev-parse refs/remotes/origin/bug/03-data
+build	UNKNOWN STEP	2026-11-17T16:51:46.7344374Z 36b08b063b287798dcb0fb93a7d5a7843ce86e97
+build	UNKNOWN STEP	2026-11-17T16:51:46.7347840Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.7348681Z ##[group]Determining the checkout info
+build	UNKNOWN STEP	2026-11-17T16:51:46.7349443Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.7351849Z [command]/usr/bin/git sparse-checkout disable
+build	UNKNOWN STEP	2026-11-17T16:51:46.7400339Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	UNKNOWN STEP	2026-11-17T16:51:46.7432895Z ##[group]Checking out the ref
+build	UNKNOWN STEP	2026-11-17T16:51:46.7437284Z [command]/usr/bin/git checkout --progress --force -B bug/03-data refs/remotes/origin/bug/03-data
+build	UNKNOWN STEP	2026-11-17T16:51:46.7534421Z Switched to a new branch 'bug/03-data'
+build	UNKNOWN STEP	2026-11-17T16:51:46.7537378Z branch 'bug/03-data' set up to track 'origin/bug/03-data'.
+build	UNKNOWN STEP	2026-11-17T16:51:46.7543308Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.7586615Z [command]/usr/bin/git log -1 --format=%H
+build	UNKNOWN STEP	2026-11-17T16:51:46.7610470Z 36b08b063b287798dcb0fb93a7d5a7843ce86e97
+build	UNKNOWN STEP	2026-11-17T16:51:46.7618974Z ##[group]Removing auth
+build	UNKNOWN STEP	2026-11-17T16:51:46.7619480Z Removing SSH command configuration
+build	UNKNOWN STEP	2026-11-17T16:51:46.7621887Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2026-11-17T16:51:46.7650153Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2026-11-17T16:51:46.7880752Z Removing HTTP extra header
+build	UNKNOWN STEP	2026-11-17T16:51:46.7883340Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2026-11-17T16:51:46.7914405Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2026-11-17T16:51:46.8145595Z Removing includeIf entries pointing to credentials config files
+build	UNKNOWN STEP	2026-11-17T16:51:46.8147927Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2026-11-17T16:51:46.8174215Z includeif.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8174996Z includeif.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git/worktrees/*.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8175727Z includeif.gitdir:/github/workspace/.git.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8176346Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8181776Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8203428Z /home/runner/work/_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8211330Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-965145ca\-df48\-418f\-8ade\-65ed6b51a526\.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8242828Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git/worktrees/*.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8262678Z /home/runner/work/_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8274158Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Test-Soup/Test-Soup/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-965145ca\-df48\-418f\-8ade\-65ed6b51a526\.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8305044Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8325853Z /github/runner_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8331328Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-965145ca\-df48\-418f\-8ade\-65ed6b51a526\.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8359409Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+build	UNKNOWN STEP	2026-11-17T16:51:46.8379612Z /github/runner_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8385716Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-965145ca\-df48\-418f\-8ade\-65ed6b51a526\.config
+build	UNKNOWN STEP	2026-11-17T16:51:46.8415046Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2026-11-17T16:51:46.8639730Z Removing credentials config '/home/runner/work/_temp/git-credentials-965145ca-df48-418f-8ade-65ed6b51a526.config'
+build	UNKNOWN STEP	2026-11-17T16:51:46.8648369Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.8912241Z ##[group]Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+build	UNKNOWN STEP	2026-11-17T16:51:46.8912692Z with:
+build	UNKNOWN STEP	2026-11-17T16:51:46.8912926Z   python-version: 3.12
+build	UNKNOWN STEP	2026-11-17T16:51:46.8913189Z   check-latest: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.8915305Z   token: ***
+build	UNKNOWN STEP	2026-11-17T16:51:46.8915645Z   mirror: https://raw.githubusercontent.com/actions/python-versions/main
+build	UNKNOWN STEP	2026-11-17T16:51:46.8916114Z   update-environment: true
+build	UNKNOWN STEP	2026-11-17T16:51:46.8916390Z   allow-prereleases: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.8916659Z   freethreaded: false
+build	UNKNOWN STEP	2026-11-17T16:51:46.8916914Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.9707760Z ##[group]Installed versions
+build	UNKNOWN STEP	2026-11-17T16:51:46.9775295Z Successfully set up CPython (3.12.16)
+build	UNKNOWN STEP	2026-11-17T16:51:46.9776036Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:46.9910721Z ##[group]Run python -m pip install build==1.3.0 twine==6.2.0
+build	UNKNOWN STEP	2026-11-17T16:51:46.9911239Z ^[[36;1mpython -m pip install build==1.3.0 twine==6.2.0^[[0m
+build	UNKNOWN STEP	2026-11-17T16:51:46.9974737Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2026-11-17T16:51:46.9975218Z env:
+build	UNKNOWN STEP	2026-11-17T16:51:46.9975536Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:46.9976118Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+build	UNKNOWN STEP	2026-11-17T16:51:46.9976849Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:46.9977483Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:46.9978368Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:46.9978795Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+build	UNKNOWN STEP	2026-11-17T16:51:46.9979155Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:47.6009693Z Collecting build==1.3.0
+build	UNKNOWN STEP	2026-11-17T16:51:47.6447258Z   Downloading build-1.3.0-py3-none-any.whl.metadata (5.6 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.6613657Z Collecting twine==6.2.0
+build	UNKNOWN STEP	2026-11-17T16:51:47.6682513Z   Downloading twine-6.2.0-py3-none-any.whl.metadata (3.6 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.6842450Z Collecting packaging>=19.1 (from build==1.3.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.6905490Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7022275Z Collecting pyproject_hooks (from build==1.3.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7085080Z   Downloading pyproject_hooks-1.3.3-py3-none-any.whl.metadata (1.3 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7223659Z Collecting readme-renderer>=35.0 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7287784Z   Downloading readme_renderer-46.0-py3-none-any.whl.metadata (3.0 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7484020Z Collecting requests>=2.20 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7546931Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7682509Z Collecting requests-toolbelt!=0.9.0,>=0.8.0 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7761454Z   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.7939989Z Collecting urllib3>=1.26.0 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8003621Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8207604Z Collecting keyring>=21.2.0 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8273894Z   Downloading keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8413630Z Collecting rfc3986>=1.4.0 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8479556Z   Downloading rfc3986-2.0.0-py2.py3-none-any.whl.metadata (6.6 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8837125Z Collecting rich>=12.0.0 (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.8903629Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9056247Z Collecting id (from twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9125690Z   Downloading id-1.6.1-py3-none-any.whl.metadata (5.1 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9258266Z Collecting SecretStorage>=3.2 (from keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9323689Z   Downloading secretstorage-3.5.0-py3-none-any.whl.metadata (4.0 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9449712Z Collecting jeepney>=0.4.2 (from keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9514770Z   Downloading jeepney-0.9.0-py3-none-any.whl.metadata (1.2 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9657187Z Collecting jaraco.classes (from keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9727609Z   Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9874404Z Collecting jaraco.functools (from keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:47.9938277Z   Downloading jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0066411Z Collecting jaraco.context (from keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0143880Z   Downloading jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0435308Z Collecting nh3>=0.2.14 (from readme-renderer>=35.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0507289Z   Downloading nh3-0.3.8-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.0 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0667432Z Collecting docutils>=0.21.2 (from readme-renderer>=35.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0736897Z   Downloading docutils-0.23-py3-none-any.whl.metadata (15 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0910686Z Collecting Pygments>=2.5.1 (from readme-renderer>=35.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.0978315Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.1788651Z Collecting charset_normalizer<4,>=2 (from requests>=2.20->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.1858745Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2029552Z Collecting idna<4,>=2.5 (from requests>=2.20->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2103751Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2283752Z Collecting certifi>=2023.5.7 (from requests>=2.20->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2350395Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2510803Z Collecting markdown-it-py>=2.2.0 (from rich>=12.0.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2581063Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2748292Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.0.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.2820520Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.3944675Z Collecting cryptography>=2.0 (from SecretStorage>=3.2->keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.4015574Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.4666410Z Collecting cffi>=2.0.0 (from cryptography>=2.0->SecretStorage>=3.2->keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.4734627Z   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.4869368Z Collecting pycparser (from cffi>=2.0.0->cryptography>=2.0->SecretStorage>=3.2->keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.4935077Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5107418Z Collecting more-itertools (from jaraco.classes->keyring>=21.2.0->twine==6.2.0)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5173381Z   Downloading more_itertools-11.2.1-py3-none-any.whl.metadata (42 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5289178Z Downloading build-1.3.0-py3-none-any.whl (23 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5371638Z Downloading twine-6.2.0-py3-none-any.whl (42 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5457093Z Downloading keyring-25.7.0-py3-none-any.whl (39 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5550974Z Downloading jeepney-0.9.0-py3-none-any.whl (49 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5640633Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5744485Z Downloading readme_renderer-46.0-py3-none-any.whl (14 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5834936Z Downloading docutils-0.23-py3-none-any.whl (634 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.5969037Z    в”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓ 634.7/634.7 kB 47.1 MB/s  0:00:00
+build	UNKNOWN STEP	2026-11-17T16:51:48.6043682Z Downloading nh3-0.3.8-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (837 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6087770Z    в”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓ 837.4/837.4 kB 211.0 MB/s  0:00:00
+build	UNKNOWN STEP	2026-11-17T16:51:48.6161735Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6211903Z    в”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓ 1.3/1.3 MB 285.1 MB/s  0:00:00
+build	UNKNOWN STEP	2026-11-17T16:51:48.6288073Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6380213Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6472140Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6564688Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6654090Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6751714Z Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6842888Z Downloading rfc3986-2.0.0-py2.py3-none-any.whl (31 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.6934034Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7031927Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7124373Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7212490Z Downloading secretstorage-3.5.0-py3-none-any.whl (15 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7313479Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7656110Z    в”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓв”Ѓ 4.8/4.8 MB 140.5 MB/s  0:00:00
+build	UNKNOWN STEP	2026-11-17T16:51:48.7737404Z Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7828311Z Downloading id-1.6.1-py3-none-any.whl (14 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.7916312Z Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.8006278Z Downloading jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.8085048Z Downloading jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.8166747Z Downloading more_itertools-11.2.1-py3-none-any.whl (74 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.8248269Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.8328937Z Downloading pyproject_hooks-1.3.3-py3-none-any.whl (10 kB)
+build	UNKNOWN STEP	2026-11-17T16:51:48.9390378Z Installing collected packages: urllib3, rfc3986, pyproject_hooks, Pygments, pycparser, packaging, nh3, more-itertools, mdurl, jeepney, jaraco.context, idna, docutils, charset_normalizer, certifi, requests, readme-renderer, markdown-it-py, jaraco.functools, jaraco.classes, id, cffi, build, rich, requests-toolbelt, cryptography, SecretStorage, keyring, twine
+build	UNKNOWN STEP	2026-11-17T16:51:50.4146743Z 
+build	UNKNOWN STEP	2026-11-17T16:51:50.4165263Z Successfully installed Pygments-2.21.0 SecretStorage-3.5.0 build-1.3.0 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 cryptography-50.0.2 docutils-0.23 id-1.6.1 idna-3.20 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.3.0 mdurl-0.1.2 more-itertools-11.2.1 nh3-0.3.8 packaging-26.3 pycparser-3.12 pyproject_hooks-1.3.3 readme-renderer-46.0 requests-2.34.2 requests-toolbelt-1.0.0 rfc3986-2.0.0 rich-15.0.0 twine-6.2.0 urllib3-2.8.0
+build	UNKNOWN STEP	2026-11-17T16:51:50.5248849Z ##[group]Run python scripts/build_release.py
+build	UNKNOWN STEP	2026-11-17T16:51:50.5249128Z ^[[36;1mpython scripts/build_release.py^[[0m
+build	UNKNOWN STEP	2026-11-17T16:51:50.5296277Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2026-11-17T16:51:50.5296440Z env:
+build	UNKNOWN STEP	2026-11-17T16:51:50.5296622Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:50.5296888Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+build	UNKNOWN STEP	2026-11-17T16:51:50.5297148Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:50.5297386Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:50.5297621Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+build	UNKNOWN STEP	2026-11-17T16:51:50.5297859Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+build	UNKNOWN STEP	2026-11-17T16:51:50.5298247Z ##[endgroup]
+build	UNKNOWN STEP	2026-11-17T16:51:50.6207838Z * Creating isolated environment: venv+pip...
+build	UNKNOWN STEP	2026-11-17T16:51:50.6493877Z * Installing packages in isolated environment:
+build	UNKNOWN STEP	2026-11-17T16:51:51.3077701Z   - setuptools==80.9.0
+build	UNKNOWN STEP	2026-11-17T16:51:51.3078070Z   - wheel==0.45.1
+build	UNKNOWN STEP	2026-11-17T16:51:51.3078264Z * Getting build dependencies for sdist...
+build	UNKNOWN STEP	2026-11-17T16:51:51.6473748Z running egg_info
+build	UNKNOWN STEP	2026-11-17T16:51:51.6484492Z creating src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.6485627Z writing src/soup_release_demo_darkak06_20261116.egg-info/PKG-INFO
+build	UNKNOWN STEP	2026-11-17T16:51:51.6492725Z writing dependency_links to src/soup_release_demo_darkak06_20261116.egg-info/dependency_links.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.6494814Z writing entry points to src/soup_release_demo_darkak06_20261116.egg-info/entry_points.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.6498259Z writing requirements to src/soup_release_demo_darkak06_20261116.egg-info/requires.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.6498954Z writing top-level names to src/soup_release_demo_darkak06_20261116.egg-info/top_level.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.6499887Z writing manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:51.6528223Z reading manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:51.6529289Z adding license file 'LICENSE'
+build	UNKNOWN STEP	2026-11-17T16:51:51.6534001Z writing manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:51.6755514Z * Building sdist...
+build	UNKNOWN STEP	2026-11-17T16:51:51.7735511Z running sdist
+build	UNKNOWN STEP	2026-11-17T16:51:51.7736075Z running egg_info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7751378Z writing src/soup_release_demo_darkak06_20261116.egg-info/PKG-INFO
+build	UNKNOWN STEP	2026-11-17T16:51:51.7758548Z writing dependency_links to src/soup_release_demo_darkak06_20261116.egg-info/dependency_links.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.7760798Z writing entry points to src/soup_release_demo_darkak06_20261116.egg-info/entry_points.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.7764114Z writing requirements to src/soup_release_demo_darkak06_20261116.egg-info/requires.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.7764806Z writing top-level names to src/soup_release_demo_darkak06_20261116.egg-info/top_level.txt
+build	UNKNOWN STEP	2026-11-17T16:51:51.7791916Z reading manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:51.7793951Z adding license file 'LICENSE'
+build	UNKNOWN STEP	2026-11-17T16:51:51.7798741Z writing manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:51.7801714Z running check
+build	UNKNOWN STEP	2026-11-17T16:51:51.7821882Z creating soup_release_demo_darkak06_20261116-0.9.4
+build	UNKNOWN STEP	2026-11-17T16:51:51.7823422Z creating soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7824732Z creating soup_release_demo_darkak06_20261116-0.9.4/src/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:51.7825239Z creating soup_release_demo_darkak06_20261116-0.9.4/tests
+build	UNKNOWN STEP	2026-11-17T16:51:51.7825788Z copying files to soup_release_demo_darkak06_20261116-0.9.4...
+build	UNKNOWN STEP	2026-11-17T16:51:51.7826250Z copying LICENSE -> soup_release_demo_darkak06_20261116-0.9.4
+build	UNKNOWN STEP	2026-11-17T16:51:51.7827451Z copying README.md -> soup_release_demo_darkak06_20261116-0.9.4
+build	UNKNOWN STEP	2026-11-17T16:51:51.7828352Z copying pyproject.toml -> soup_release_demo_darkak06_20261116-0.9.4
+build	UNKNOWN STEP	2026-11-17T16:51:51.7829794Z copying src/soup_release_demo_darkak06_20261116.egg-info/PKG-INFO -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7830818Z copying src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7831718Z copying src/soup_release_demo_darkak06_20261116.egg-info/dependency_links.txt -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7832626Z copying src/soup_release_demo_darkak06_20261116.egg-info/entry_points.txt -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7833509Z copying src/soup_release_demo_darkak06_20261116.egg-info/requires.txt -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7834387Z copying src/soup_release_demo_darkak06_20261116.egg-info/top_level.txt -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7835070Z copying src/soupdemo/__init__.py -> soup_release_demo_darkak06_20261116-0.9.4/src/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:51.7835544Z copying src/soupdemo/cli.py -> soup_release_demo_darkak06_20261116-0.9.4/src/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:51.7835984Z copying tests/test_cli.py -> soup_release_demo_darkak06_20261116-0.9.4/tests
+build	UNKNOWN STEP	2026-11-17T16:51:51.7836590Z copying src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt -> soup_release_demo_darkak06_20261116-0.9.4/src/soup_release_demo_darkak06_20261116.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:51.7843010Z Writing soup_release_demo_darkak06_20261116-0.9.4/setup.cfg
+build	UNKNOWN STEP	2026-11-17T16:51:51.7844018Z Creating tar archive
+build	UNKNOWN STEP	2026-11-17T16:51:51.7870767Z removing 'soup_release_demo_darkak06_20261116-0.9.4' (and everything under it)
+build	UNKNOWN STEP	2026-11-17T16:51:51.8226816Z * Building wheel from sdist
+build	UNKNOWN STEP	2026-11-17T16:51:51.8232890Z * Creating isolated environment: venv+pip...
+build	UNKNOWN STEP	2026-11-17T16:51:51.8249656Z * Installing packages in isolated environment:
+build	UNKNOWN STEP	2026-11-17T16:51:52.3236969Z   - setuptools==80.9.0
+build	UNKNOWN STEP	2026-11-17T16:51:52.3237188Z   - wheel==0.45.1
+build	UNKNOWN STEP	2026-11-17T16:51:52.3237368Z * Getting build dependencies for wheel...
+build	UNKNOWN STEP	2026-11-17T16:51:52.6063851Z running egg_info
+build	UNKNOWN STEP	2026-11-17T16:51:52.6074186Z writing src/soup_release_demo_darkak06_20261116.egg-info/PKG-INFO
+build	UNKNOWN STEP	2026-11-17T16:51:52.6082194Z writing dependency_links to src/soup_release_demo_darkak06_20261116.egg-info/dependency_links.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.6084731Z writing entry points to src/soup_release_demo_darkak06_20261116.egg-info/entry_points.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.6088477Z writing requirements to src/soup_release_demo_darkak06_20261116.egg-info/requires.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.6089355Z writing top-level names to src/soup_release_demo_darkak06_20261116.egg-info/top_level.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.6117835Z reading manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:52.6120210Z adding license file 'LICENSE'
+build	UNKNOWN STEP	2026-11-17T16:51:52.6124866Z writing manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:52.6340375Z * Building wheel...
+build	UNKNOWN STEP	2026-11-17T16:51:52.7432561Z running bdist_wheel
+build	UNKNOWN STEP	2026-11-17T16:51:52.7471458Z running build
+build	UNKNOWN STEP	2026-11-17T16:51:52.7471660Z running build_py
+build	UNKNOWN STEP	2026-11-17T16:51:52.7482553Z creating build/lib/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:52.7484818Z copying src/soupdemo/cli.py -> build/lib/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:52.7486589Z copying src/soupdemo/__init__.py -> build/lib/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:52.7507397Z installing to build/bdist.linux-x86_64/wheel
+build	UNKNOWN STEP	2026-11-17T16:51:52.7507657Z running install
+build	UNKNOWN STEP	2026-11-17T16:51:52.7546355Z running install_lib
+build	UNKNOWN STEP	2026-11-17T16:51:52.7556168Z creating build/bdist.linux-x86_64/wheel
+build	UNKNOWN STEP	2026-11-17T16:51:52.7558345Z creating build/bdist.linux-x86_64/wheel/soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:52.7559276Z copying build/lib/soupdemo/cli.py -> build/bdist.linux-x86_64/wheel/./soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:52.7560875Z copying build/lib/soupdemo/__init__.py -> build/bdist.linux-x86_64/wheel/./soupdemo
+build	UNKNOWN STEP	2026-11-17T16:51:52.7561218Z running install_egg_info
+build	UNKNOWN STEP	2026-11-17T16:51:52.7568704Z running egg_info
+build	UNKNOWN STEP	2026-11-17T16:51:52.7576117Z writing src/soup_release_demo_darkak06_20261116.egg-info/PKG-INFO
+build	UNKNOWN STEP	2026-11-17T16:51:52.7586134Z writing dependency_links to src/soup_release_demo_darkak06_20261116.egg-info/dependency_links.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.7590123Z writing entry points to src/soup_release_demo_darkak06_20261116.egg-info/entry_points.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.7595277Z writing requirements to src/soup_release_demo_darkak06_20261116.egg-info/requires.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.7597544Z writing top-level names to src/soup_release_demo_darkak06_20261116.egg-info/top_level.txt
+build	UNKNOWN STEP	2026-11-17T16:51:52.7611800Z reading manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7614002Z adding license file 'LICENSE'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7619123Z writing manifest file 'src/soup_release_demo_darkak06_20261116.egg-info/SOURCES.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7621905Z Copying src/soup_release_demo_darkak06_20261116.egg-info to build/bdist.linux-x86_64/wheel/./soup_release_demo_darkak06_20261116-0.9.4-py3.12.egg-info
+build	UNKNOWN STEP	2026-11-17T16:51:52.7627084Z running install_scripts
+build	UNKNOWN STEP	2026-11-17T16:51:52.7635064Z creating build/bdist.linux-x86_64/wheel/soup_release_demo_darkak06_20261116-0.9.4.dist-info/WHEEL
+build	UNKNOWN STEP	2026-11-17T16:51:52.7638400Z creating '/home/runner/work/Test-Soup/Test-Soup/dist/.tmp-eli2od7t/soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+build	UNKNOWN STEP	2026-11-17T16:51:52.7642062Z adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/licenses/LICENSE'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7643783Z adding 'soupdemo/__init__.py'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7644826Z adding 'soupdemo/cli.py'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7645911Z adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/METADATA'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7646518Z adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/WHEEL'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7647250Z adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/entry_points.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7647717Z adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/top_level.txt'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7649346Z adding 'soup_release_demo_darkak06_20261116-0.9.4.dist-info/RECORD'
+build	UNKNOWN STEP	2026-11-17T16:51:52.7649917Z removing build/bdist.linux-x86_64/wheel
+build	UNKNOWN STEP	2026-11-17T16:51:52.8058102Z Successfully built soup_release_demo_darkak06_20261116-0.9.4.tar.gz and soup_release_demo_darkak06_20261116-0.9.4-py3-none-any.whl
+build	UNKNOWN STEP	2026-11-17T16:51:53.0115037Z Checking 
+build	UNKNOWN STEP	2026-11-17T16:51:53.0115357Z /home/runner/work/Test-Soup/Test-Soup/dist/soup_release_demo_darkak06_20261116-0
+build	UNKNOWN STEP	2026-11-17T16:51:53.0136441Z .9.4-py3-none-any.whl: ^[[32mPASSED^[[0m
+build	UNKNOWN STEP	2026-11-17T16:51:53.0137522Z Checking 
+build	UNKNOWN STEP	2026-11-17T16:51:53.0138153Z /home/runner/work/Test-Soup/Test-Soup/dist/soup_release_demo_darkak06_20261116-0
+build	UNKNOWN STEP	2026-11-17T16:51:53.0158393Z .9.4.tar.gz: ^[[32mPASSED^[[0m
+build	UNKNOWN STEP	2026-11-17T16:51:53.0478243Z Traceback (most recent call last):
+build	UNKNOWN STEP	2026-11-17T16:51:53.0486025Z   File "/home/runner/work/Test-Soup/Test-Soup/scripts/build_release.py", line 63, in <module>
+build	UNKNOWN STEP	2026-11-17T16:51:53.0486503Z     main()
+build	UNKNOWN STEP	2026-11-17T16:51:53.0486886Z   File "/home/runner/work/Test-Soup/Test-Soup/scripts/build_release.py", line 51, in main
+build	UNKNOWN STEP	2026-11-17T16:51:53.0487293Z     original = inspect(wheel)
+build	UNKNOWN STEP	2026-11-17T16:51:53.0487515Z                ^^^^^^^^^^^^^^
+build	UNKNOWN STEP	2026-11-17T16:51:53.0487910Z   File "/home/runner/work/Test-Soup/Test-Soup/scripts/build_release.py", line 27, in inspect
+build	UNKNOWN STEP	2026-11-17T16:51:53.0488590Z     assert package_files == expected, f"wheel manifest mismatch: {package_files}"
+build	UNKNOWN STEP	2026-11-17T16:51:53.0488929Z            ^^^^^^^^^^^^^^^^^^^^^^^^^
+build	UNKNOWN STEP	2026-11-17T16:51:53.0489280Z AssertionError: wheel manifest mismatch: ['soupdemo/__init__.py', 'soupdemo/cli.py']
+build	UNKNOWN STEP	2026-11-17T16:51:53.0555942Z ##[error]Process completed with exit code 1.
+build	UNKNOWN STEP	2026-11-17T16:51:53.0655194Z Post job cleanup.
+build	UNKNOWN STEP	2026-11-17T16:51:53.1257886Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2026-11-17T16:51:53.1347749Z git version 2.56.1
+build	UNKNOWN STEP	2026-11-17T16:51:53.1353941Z Temporarily overriding HOME='/home/runner/work/_temp/a12cbeb4-1e94-4933-bfa1-4e78f7baff64' before making global git config changes
+build	UNKNOWN STEP	2026-11-17T16:51:53.1354683Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2026-11-17T16:51:53.1357337Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Test-Soup/Test-Soup
+build	UNKNOWN STEP	2026-11-17T16:51:53.1394953Z Removing SSH command configuration
+build	UNKNOWN STEP	2026-11-17T16:51:53.1408746Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2026-11-17T16:51:53.1435937Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2026-11-17T16:51:53.1702509Z Removing HTTP extra header
+build	UNKNOWN STEP	2026-11-17T16:51:53.1707452Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2026-11-17T16:51:53.1758836Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2026-11-17T16:51:53.2026106Z Removing includeIf entries pointing to credentials config files
+build	UNKNOWN STEP	2026-11-17T16:51:53.2032167Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2026-11-17T16:51:53.2066891Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2026-11-17T16:51:53.2477415Z Cleaning up orphan processes

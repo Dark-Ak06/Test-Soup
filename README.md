@@ -1,6 +1,6 @@
 # Soup release engineering exercise
 
-Status: local implementation; see docs/EVIDENCE.md for measured results and missing cloud evidence.
+Status: hosted defect demonstrations and TestPyPI release. See docs/EVIDENCE.md for exact run links, diagnostics and limitations.
 Only authorized remote: https://github.com/Dark-Ak06/Test-Soup.git
 
 Python CLI prints a greeting from packaged data. Supported Python: >=3.10.

@@ -37,3 +37,8 @@ Set explicit 0755 directory / 0644 input-file permissions before Docker runs.
 Windows local success alone would not expose this POSIX host permission issue.
 
 2026-11-17: resumed authenticated cloud work. Fixed incidental import ordering on bug branches without removing intentional defects. Enabled explicit dispatch. Push triggers now also created runs; cancelled only redundant queued/pending dispatches and retained cancellation evidence. Earlier assumption that the lack of runs was solely due to multi-branch push was not established. TestPyPI account page still reports 2FA not enabled despite recovery codes being present.
+
+2026-11-17: completed both owner-confirmed Trusted Publisher registrations,
+published incident 0.9.3, reproduced exact-version installation failures, and
+triggered fixed v0.9.4. Collected and verified all six intended hosted defect errors.
+No claim is made that the candidate personally executed or reviewed these steps.
