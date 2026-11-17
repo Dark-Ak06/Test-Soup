@@ -1,5 +1,6 @@
 name: naive-before
 on:
+  workflow_dispatch:
   push:
     branches: ['bug/**', 'incident/**']
     tags: ['v0.9.3']
