@@ -35,3 +35,5 @@ correction then failed with SyntaxError due to quoting; replaced it with a file.
 which would prevent a non-root Linux container reading its mounted inputs.
 Set explicit 0755 directory / 0644 input-file permissions before Docker runs.
 Windows local success alone would not expose this POSIX host permission issue.
+
+2026-11-17: resumed authenticated cloud work. Fixed incidental import ordering on bug branches without removing intentional defects. Enabled explicit dispatch. Push triggers now also created runs; cancelled only redundant queued/pending dispatches and retained cancellation evidence. Earlier assumption that the lack of runs was solely due to multi-branch push was not established. TestPyPI account page still reports 2FA not enabled despite recovery codes being present.
