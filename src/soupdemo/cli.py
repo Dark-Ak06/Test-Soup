@@ -1,17 +1,15 @@
+import pwd
 from importlib.resources import files
 
 import click
+import tomllib
 from packaging.version import Version
 
-Version('1.0')
-import pwd
-
-pwd.getpwuid(0)
-import tomllib
-
-tomllib.loads('')
-
 from soupdemo import __version__
+
+tomllib.loads("")
+pwd.getpwuid(0)
+Version("1.0")
 
 
 def greeting(name: str) -> str:
