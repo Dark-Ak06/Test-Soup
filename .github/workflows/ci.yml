@@ -1,5 +1,6 @@
 name: robust-ci
 on:
+  workflow_dispatch:
   push:
     branches: ['main', 'bug/**', 'incident/**']
   pull_request:

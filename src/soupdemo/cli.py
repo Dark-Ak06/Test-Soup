@@ -1,11 +1,11 @@
+import pwd
 from importlib.resources import files
 
 import click
-import pwd
-
-pwd.getpwuid(0)
 
 from soupdemo import __version__
+
+pwd.getpwuid(0)
 
 
 def greeting(name: str) -> str:
