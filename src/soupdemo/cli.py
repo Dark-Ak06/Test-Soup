@@ -3,9 +3,9 @@ from importlib.resources import files
 import click
 import tomllib
 
-tomllib.loads('')
-
 from soupdemo import __version__
+
+tomllib.loads("")
 
 
 def greeting(name: str) -> str:
