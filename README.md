@@ -12,11 +12,14 @@ python -m pip install -e '.[dev]'
 python -m pytest
 python scripts/build_release.py
 python scripts/verify_install.py dist --expected 0.9.4
+docker build --build-arg EXPECTED_VERSION=0.9.4 -t soupdemo-wheel-check .
 ```
 
 `verify_install.py` creates a disposable venv OUTSIDE the checkout, installs the wheel
 without development tools, then tests the installed console command and resources.
 `--docker 3.10` uses a non-root Linux container with no source checkout mounted.
+The checked-in `Dockerfile` provides the same non-root, no-cache wheel verification
+against an explicit Python 3.10.22 base image; build the distributions first.
 
 Read docs/SETUP.md for cloud setup, docs/EXPERIMENTS.md for defect branches,
 docs/SUPPLY_CHAIN.md for attack demonstrations, and docs/GPU_CI.md for design only.

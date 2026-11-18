@@ -30,9 +30,9 @@ def verify(dist, expected, docker=None):
             # Only wheel and independent probe enter the container, never the repository.
             script = (
                 "python -m venv /tmp/env && "
-                "/tmp/env/bin/python -m pip install --require-hashes "
+                "/tmp/env/bin/python -m pip install --no-cache-dir --require-hashes "
                 "-r /input/requirements-runtime.lock && "
-                "/tmp/env/bin/python -m pip install --no-deps /input/*.whl && "
+                "/tmp/env/bin/python -m pip install --no-cache-dir --no-deps /input/*.whl && "
                 "/tmp/env/bin/python -m pip check && "
                 "/tmp/env/bin/python /input/installed_probe.py "
                 + expected
@@ -68,6 +68,7 @@ def verify(dist, expected, docker=None):
                     "-m",
                     "pip",
                     "install",
+                    "--no-cache-dir",
                     "--require-hashes",
                     "-r",
                     root / "requirements-runtime.lock",
@@ -76,7 +77,15 @@ def verify(dist, expected, docker=None):
                 env=env,
             )
             run(
-                [python, "-m", "pip", "install", "--no-deps", root / wheels[0].name],
+                [
+                    python,
+                    "-m",
+                    "pip",
+                    "install",
+                    "--no-cache-dir",
+                    "--no-deps",
+                    root / wheels[0].name,
+                ],
                 cwd=root,
                 env=env,
             )

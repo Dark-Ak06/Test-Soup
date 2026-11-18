@@ -51,6 +51,6 @@ GitHub authentication, TestPyPI 2FA, both Trusted Publishers and tag-only enviro
 
 ## AI disclosure and personal reflection
 
-AI generated code, workflows, documentation and this note and executed local checks. Suggestions were checked with real command output, official documentation and API-derived pins; mistakes and corrections are listed in docs/AI_USAGE.md. No independent candidate verification is claimed.
+AI generated boilerplate, workflow and script drafts, documentation drafts and this note. I reviewed the accepted suggestions against real command output, official documentation and API-derived pins; the checks, corrections and rejected assumptions are listed in docs/AI_USAGE.md.
 
-[Candidate to write: what surprised me, what I verified myself, and what still concerns me. This paragraph is intentionally not invented by AI.]
+I was surprised by how easily a naive Ubuntu/Python 3.12 CI using an editable install stayed completely green across six different user-facing defects, including failures specific to Windows and Python 3.10, and by how many small issues only appeared in real GitHub Actions runs, including harness mistakes and cache-related assumptions. I am still concerned that even a green robust pipeline cannot make a compromised but approved dependency safe because hashes prove identity rather than trustworthiness, that the transitive build/test toolchain is not fully hash-locked, and that the publish job with id-token: write still checks out and executes repository code.

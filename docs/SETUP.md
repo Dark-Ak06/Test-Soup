@@ -1,37 +1,52 @@
-# Remaining account setup and cloud execution
+# Cloud setup and verified release state
 
-No GitHub host is authenticated in gh. No TestPyPI publishing identity is
-configured by this project. Passwords, 2FA codes and access tokens do not belong
-in chat, source files or logs. These identity steps require the account owner.
+## Current verified state
 
-1. Run `gh auth login --hostname github.com --web` in your terminal. Select HTTPS,
-   open the browser flow and sign into the intended account. Check `gh auth status`.
-2. Open https://github.com/Dark-Ak06/Test-Soup and confirm ownership/write access.
-   Public visibility is recommended so reviewers can see the code and standard
-   hosted runner usage is free. Visibility has NOT been changed here.
-3. Repository Settings > Environments > New environment > `testpypi`.
-   Deployment branches and tags > Selected branches and tags > add TAG pattern `v*`.
-   Do not add a branch pattern. If the account cannot configure it, an owner must.
-4. Sign into TestPyPI, complete account verification and 2FA. Open account
-   Publishing and add a pending GitHub publisher with project `soup-release-demo-darkak06-20261116`,
-   owner `Dark-Ak06`, repository `Test-Soup`, workflow `naive.yml`, environment
-   `testpypi`. Name returned HTTP 404 at preflight; this does not reserve it.
-5. After the first incident publication creates the project, use project Manage
-   > Publishing to add `release.yml` with the same repository/environment.
-   Sequential registration avoids assuming two pending publishers for one new name.
-6. Push main and the six bug branches; inspect actual naive and robust runs.
-   Publish incident tag v0.9.3 only after its naive run is verified. Record the
-   expected failures from exact 0.9.3 installs using scripts/post_publish.py.
-7. Create v0.9.4 on the final main commit and push it. Inspect all checks, OIDC
-   publication and post-publish smoke. Do not claim completion until they succeed.
-8. Use the gh run list/view commands in EVIDENCE.md to collect real URLs and logs.
-   Preserve failed runs. Correct faults in new commits and use a new version if
-   a version was already uploaded. Do not force-push or move published tags.
+The public repository is https://github.com/Dark-Ak06/Test-Soup. Hosted CI,
+incident publication and the fixed release have been completed; exact run links,
+commit SHAs and diagnostics are retained in `docs/EVIDENCE.md`.
 
-This repository currently has local branches but no publication tags. The full
-remote execution is NOT DONE. The release jobs target TestPyPI only.
+- Tag `v0.9.3` preserves the intentionally broken incident. The `naive.yml`
+  Trusted Publisher uploaded it to TestPyPI through OIDC in
+  https://github.com/Dark-Ak06/Test-Soup/actions/runs/44132055388.
+- Tag `v0.9.4` is the fixed release. The `release.yml` Trusted Publisher uploaded
+  it through OIDC, and all 37 release, matrix and post-publish jobs passed in
+  https://github.com/Dark-Ak06/Test-Soup/actions/runs/44142793862.
+- The fixed 33-job baseline is
+  https://github.com/Dark-Ak06/Test-Soup/actions/runs/44130869957. The current
+  `main` commit also passed robust CI in
+  https://github.com/Dark-Ak06/Test-Soup/actions/runs/44143511509.
+- The GitHub `testpypi` environment is restricted to version tags. Both
+  `naive.yml` and `release.yml` are registered as TestPyPI Trusted Publishers
+  for project `soup-release-demo-darkak06-20261116` and environment `testpypi`.
+- No long-lived TestPyPI API token is used. Only the two publication jobs have
+  `id-token: write`; all other jobs retain read-only repository permissions.
+
+The published exercise project is:
+https://test.pypi.org/project/soup-release-demo-darkak06-20261116/
+
+## Owner checks for a future release
+
+1. Authenticate to GitHub as the intended repository owner and verify write
+   access. Authentication, passwords, 2FA codes and recovery codes must never
+   be stored in source, chat transcripts, workflow logs or artifacts.
+2. Confirm repository environment `testpypi` still allows only the intended
+   version-tag pattern and that both Trusted Publisher registrations still name
+   the exact repository, workflow file and environment.
+3. Review the candidate commit on protected `main`, run robust CI, and create an
+   immutable version tag whose value matches project and runtime metadata.
+4. Inspect every release job. Do not rerun or delete a failure to manufacture a
+   green record; fix forward with a new commit and version when publication may
+   already have occurred.
+5. Record the run URL, exact commit SHA, artifact hashes and post-publish install
+   results in `docs/EVIDENCE.md`.
+
+Real PyPI publication is not configured or authorized by this exercise. Before
+adding it, protect release-tag creation, hash-lock the transitive build/test
+toolchain, and prevent the OIDC publication job from executing repository code.
 
 Sources, retrieved 2026-11-16:
+
 - https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/
 - https://docs.pypi.org/trusted-publishers/adding-a-publisher/
 - https://docs.github.com/en/actions/reference/runners/github-hosted-runners

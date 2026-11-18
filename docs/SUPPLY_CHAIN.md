@@ -25,11 +25,12 @@ tags. No pull_request_target workflow exists. PR code gets no publishing job.
 Fork-PR credential isolation was NOT demonstrated with a second account.
 Environment tag rules are setup instructions, NOT a configured remote control.
 
-Runtime verification uses locked dependencies and installs the package without
-dependency resolution, then runs pip check. General users do not inherit this
-lock from wheel metadata. Build/dev transitive dependencies are still resolved
-online; the environment is NOT fully hermetic. No pip cache is restored in CI,
-but pip, runner and Docker base-image changes remain open risks.
+Runtime verification uses locked dependencies, `--no-cache-dir`, and installs the
+package without dependency resolution before running pip check. General users do
+not inherit this lock from wheel metadata. Build/dev transitive dependencies are
+still resolved online; the environment is NOT fully hermetic. No Actions or pip
+cache is restored in clean artifact verification, but resolver behavior, runner
+images and Docker base-image changes remain open risks.
 
 Next priorities: fully hashed build/test locks per supported interpreter,
 trusted tag creation/protected main, artifact attestations, dependency scanning,

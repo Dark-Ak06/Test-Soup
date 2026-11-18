@@ -1,0 +1,7 @@
+**
+!Dockerfile
+!requirements-runtime.lock
+!scripts/
+!scripts/installed_probe.py
+!dist/
+!dist/*.whl

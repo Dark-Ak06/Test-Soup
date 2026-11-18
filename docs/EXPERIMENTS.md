@@ -22,6 +22,10 @@ python scripts/make_evidence.py
 ```
 
 Use a NEW scratch directory. Command logs are stored under evidence/.
+`make_evidence.py` preserves an existing `docs/EVIDENCE.md` whenever verified
+GitHub Actions run URLs are present. Its destructive local-only reset requires
+the explicit `--force-reset` flag; do not use that flag after cloud evidence has
+been collected.
 The naive sequence really runs in Linux Python 3.12: editable install, pytest,
 then build. The installed probe uses a fresh external Windows venv for B2-B6,
 and a non-root Linux Python 3.10 container for B1 and the incident.

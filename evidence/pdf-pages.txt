@@ -1,1 +1,2 @@
-2026-11-16: pypdf reopened docs/NOTE.pdf; page count=2
+2026-11-18: pdfinfo reported docs/NOTE.pdf page count=2 and A4 page size.
+Both pages were rendered with Poppler and visually checked for clipping and overlap.

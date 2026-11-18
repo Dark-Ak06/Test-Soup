@@ -21,4 +21,4 @@ Each listed run was rechecked with gh run view; full API metadata and failed log
 
 ## Retained limitations
 
-Fork PR/second account and GPU execution were not demonstrated. GPU is a design only. Build/dev transitive dependencies are not fully hashed. Personal reflection requires candidate review. Original local-stage PDF and status documents are superseded by this cloud evidence. Redundant queued manual dispatches were cancelled when push runs appeared; records were retained.
+Fork PR/second account and GPU execution were not demonstrated. GPU is a design only. Build/dev transitive dependencies are not fully hashed. The personal reflection and AI disclosure were updated after final technical review on 2026-11-18. Original local-stage status documents are superseded by this cloud evidence. Redundant queued manual dispatches were cancelled when push runs appeared; records were retained.
